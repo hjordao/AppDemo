@@ -9,7 +9,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Insert title here</title>
+<title>JSP JSLT Tutorial</title>
 </head>
 <body>
 
@@ -19,7 +19,9 @@
 		${s} <br/>
 	</c:forEach>
 	
-	is there: ${fn:contains(str, 'Java')}
+	<c:if test="${fn:contains(str, 'Java')}">
+		JAVA is There!
+	</c:if>
 
 </body>
 </html>
