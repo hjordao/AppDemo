@@ -18,6 +18,8 @@
 	<c:forEach items="${fn:split(str,' ')}" var="s">
 		${s} <br/>
 	</c:forEach>
+	
+	is there: ${fn:contains(str, 'Java')}
 
 </body>
 </html>
